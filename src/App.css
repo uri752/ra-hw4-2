@@ -1,38 +1,67 @@
 .App {
-  text-align: center;
+  margin: auto;
+  width: 600px;
+  font-weight: 600;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
   display: flex;
-  flex-direction: column;
+  align-items: flex-end;
+  align-content: center; 
+  justify-content: space-between;  
+}
+
+label {
+  display: block;
+  margin: 10px;
+}
+
+input {
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+  box-sizing: border-box;
+}
+
+form button {
+  background: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 50px;
+  width: 100px;
+  font-weight: 600;
+
+}
+
+.workouts {
+  margin-top: 50px;
+}
+
+.workouts-headers {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+.workouts-data {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.workouts-data li {
+  list-style-type: none;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.workouts-data button {
+  background: none;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons')
